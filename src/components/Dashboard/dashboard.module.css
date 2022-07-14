@@ -1,0 +1,83 @@
+.dashboardContainer {
+width: 100%;
+cursor: pointer;
+min-height: 100vh;
+}
+
+.header{
+    height: 5rem;
+    background-image: url('../../assets/images/theatre-header.jpg');
+    background-repeat: round;
+    -webkit-box-shadow: 0 15px 10px -10px #e9dbda;
+   -moz-box-shadow: 0 15px 10px -10px #e9dbda;
+        box-shadow: 0 15px 10px -10px #e9dbda;
+}
+
+.eachMovie {
+    border: 1px solid white;
+    margin-bottom: 1rem;
+}
+
+.colorHeader {
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.movieDescription {
+    padding: 1.5rem;
+}
+
+.headtext {
+    color: orange;
+    font-weight: 600;
+}
+
+.headValue {
+    color: white;
+}
+
+.headValueModal {
+    color: black;
+    font-weight: 600;
+}
+
+.bookTicket {
+    color: white;
+    font-weight: 600;
+}
+
+.bookTicket:hover {
+    color: black;
+    font-weight: 600;
+}
+
+.imageMovie {
+    width: 100%;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.btnSecondary{
+    padding: 0.5rem;
+    background-color: rgb(255, 166, 0);
+    outline: none;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+}
+
+.btnPrimary{
+    padding: 0.5rem;
+    background-color: blue;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+
+.filterMovie {
+    padding: 0.2rem;
+    width: 100%;
+    outline: none;
+    border: none;
+}
