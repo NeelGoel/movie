@@ -112,6 +112,10 @@ const Dashboard = () => {
         setIsOpen(true);
     }
 
+    const redirectDashboard = () => {
+        window.location.assign('https://movie-demo.vercel.app/');
+    }
+
     return (
         <div className={style.dashboardContainer} style={{ "background": bgcolor }}>
             <div className={`${style.header} width-100 flex justify-content-center align-items-center`}>
@@ -122,7 +126,8 @@ const Dashboard = () => {
                     <div>
                     <span className={style.colorHeader}>Upcoming Movies List</span>
                     </div>
-                    <div className='width-20'>
+                    <div className='width-25 flex align-items-center'>
+                        <div className={style.dashLink} onClick={redirectDashboard}>Dashboard</div>
                         <input className={style.filterMovie} type='text' placeholder="Search By Movie Name" autoComplete="off" value={searchmovie} onChange={(e) => movieSearch(e)}/>
                     </div>
                 </div>
@@ -133,7 +138,7 @@ const Dashboard = () => {
                         allMoviesData.map((movie, index) => {
                             return (
                                 // <ScrollAnimation animateIn="fadeIn" key={index}>
-                                <AnimationOnScroll animateIn="animate__bounceIn" key={index}>
+                                <AnimationOnScroll animateIn="fadeIn" key={index}>
                                     <div className={`${style.eachMovie} flex`}>
                                         <div className="width-20">
                                             <img className={`${style.imageMovie} ${animate[index]}`} src={movie.posterImage} alt={movie.slug.current} />

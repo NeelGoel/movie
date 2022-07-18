@@ -17,7 +17,7 @@ const Login = () => {
 
     const loginUser = () => {
         if (form.username !== '' && form.password !== '') {
-            navigate('/dashboard');
+            navigate('/home');
         }
     }
 

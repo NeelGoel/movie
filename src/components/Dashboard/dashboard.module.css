@@ -81,3 +81,16 @@ min-height: 100vh;
     outline: none;
     border: none;
 }
+
+.dashLink {
+    font-size: 16px;
+    color: white;
+    font-family: sans-serif;
+    margin-right: 0.5rem;
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.dashLink:hover {
+    color: blue;
+}
